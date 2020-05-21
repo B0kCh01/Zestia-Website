@@ -11,6 +11,10 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 
+*:focus {
+    outline: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -73,6 +77,7 @@ section {
     min-height: 100vh;
     padding-left: 10vw;
     padding-right: 10vw;
+    overflow-x: hidden;
 }
 
 .jumbo-text h1 {
@@ -184,7 +189,11 @@ releases h3 {
 
 #download {
     min-height: calc(100vh);
-    padding-top: 80px;
+    padding: 0;
+}
+
+#download .jumbo-text h1 {
+    font-size: 3.6em;
 }
 
 #guide {
