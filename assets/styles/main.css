@@ -139,9 +139,6 @@ split .two {
     split .jumbo-text {
         text-align: center;
     }
-    split .img img {
-        width: 40vw;
-    }
 }
 
 .btn {
