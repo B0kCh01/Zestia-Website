@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="../assets/styles/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="../assets/scripts/scroll.js"></script>
+    <script defer src="../assets/scripts/render-releases.js"></script>
+</head>
+
+<body id="top">
+    <nav>
+        <a href="/"><img src="../assets/images/logo-z.png"></a>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/#download">Download</a>
+            <a href="/#guide">Guide</a>
+        </div>
+    </nav>
+    <section id="history">
+        <split class="inv">
+            <div data-aos="fade-up" class="one">
+                <releases-all></releases-all>
+            </div>
+            <div data-aos="fade-up" class="two jumbo-text">
+                <h1>History</h1>
+                <subtitle>Older versions of Zestia are listed here.</subtitle>
+                <div class="block">
+                    <a class="btn" href="/#download">Lastest</a>
+                </div>
+            </div>
+        </split>
+    </section>
+    <footer>
+        <credits>
+            <a href="https://twitter.com/cynostial"><i class="fab fa-2x fa-twitter"></i></a>
+            <a href="https://twitter.com/b0kch01"><i class="fas fa-2x fa-file-code"></i></a>
+        </credits>
+        <copyright>
+            © Copyright 2016 - 2020 LMDinteractive, Intervice Software USA - All Rights Reserved
+        </copyright>
+    </footer>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: "easeInOutQuint ",
+            anchorPlacement: "top-bottom ",
+            once: true
+        });
+    </script>
+</body>
+
+</html>

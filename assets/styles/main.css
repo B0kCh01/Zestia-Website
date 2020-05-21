@@ -45,12 +45,10 @@ nav {
     width: 100vw;
     top: 0;
     height: 80px;
-    background-color: #2e2e2eb9;
+    background-color: #444755;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
     z-index: 99;
 }
 
@@ -82,14 +80,53 @@ section {
 
 .jumbo-text h1 {
     font-size: 5em;
-    font-size: 72px;
-    background: -webkit-linear-gradient(0deg, rgba(16, 99, 177, 1) 0%, rgba(0, 234, 255, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(16, 99, 177, 1) 0%, rgba(0, 234, 255, 1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .jumbo-text subtitle {
     font-size: 2em;
+}
+
+footer {
+    min-height: 10vh;
+    background-color: #444755;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 5vh 10vw;
+}
+
+credits {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+credits i {
+    margin: 0 1vw;
+    background: -webkit-linear-gradient(45deg, rgba(16, 99, 177, 1) 0%, rgba(0, 234, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .3s ease-out;
+}
+
+credits i:hover {
+    transform: translateY(-5px);
+    opacity: 0.6;
+}
+
+copyright {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
 }
 
 
@@ -129,32 +166,16 @@ split .two {
     margin: 5vw;
 }
 
-@media all and (max-width: 1100px) {
-    split {
-        flex-direction: column;
-    }
-    split.inv {
-        flex-direction: column-reverse;
-    }
-    split .one,
-    split .two {
-        width: 80vw;
-        margin: 0;
-    }
-    split .jumbo-text {
-        text-align: center;
-    }
-}
-
 .btn {
     display: inline-block;
     background: #149dcc;
-    padding: 20px 30px;
+    padding: 1.2em 3em;
     color: white;
     border-radius: 10px 10px;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(.54, 0, .26, 1.82);
     box-shadow: 0 3px 5px lightslategray;
+    margin-bottom: 10px !important;
 }
 
 .btn.alt {
@@ -171,11 +192,13 @@ split .two {
 
 /* Releases */
 
-releases h2 {
+releases h2,
+releases-all h2 {
     color: #444755;
 }
 
-releases h3 {
+releases h3,
+releases-all h3 {
     color: #149dcc;
 }
 
@@ -189,11 +212,22 @@ releases h3 {
 
 #download {
     padding-top: 80px;
-    min-height: calc(100vh);
+    height: calc(100vh - 160px);
+    overflow-y: hidden;
+    background-color: aliceblue;
+}
+
+#download split {
+    align-items: initial;
+}
+
+#download .one {
+    overflow-y: auto;
+    height: 80vh;
 }
 
 #download .jumbo-text h1 {
-    font-size: 3.6em;
+    font-size: 4em;
 }
 
 #guide {
@@ -201,7 +235,60 @@ releases h3 {
     padding-top: 80px;
 }
 
+#history {
+    min-height: calc(100vh - 80px) !important;
+    overflow: hidden;
+}
+
+#history split {
+    align-items: start;
+}
+
 .sticky {
     position: sticky;
     top: 0;
+}
+
+@media all and (max-width: 1100px) {
+    split {
+        flex-direction: column;
+    }
+    split.inv {
+        flex-direction: column-reverse;
+    }
+    split .one,
+    split .two {
+        width: 80vw;
+        margin: 0;
+    }
+    split .jumbo-text {
+        text-align: center;
+    }
+    #download .one {
+        height: inherit;
+    }
+    #download {
+        overflow-y: hidden;
+        height: auto;
+        min-height: calc(100vh - 160px);
+    }
+}
+
+@media all and (max-width: 420px) {
+    nav a {
+        margin: 1vw;
+    }
+}
+
+@media all and (max-width: 355px) {
+    section {
+        font-size: 70%;
+    }
+}
+
+@media all and (max-width: 280px) {
+    nav .links a[href="#top"],
+    nav .links a[href="/"] {
+        display: none;
+    }
 }
