@@ -188,8 +188,8 @@ releases h3 {
 }
 
 #download {
+    padding-top: 80px;
     min-height: calc(100vh);
-    padding: 0;
 }
 
 #download .jumbo-text h1 {
