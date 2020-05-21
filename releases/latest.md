@@ -15,12 +15,3 @@
 ## Known Issues
 - Android cannot install swift apps :(
 - Random rick rolls
-
-### Minor Changes
-- Rewrote backend parser
-- Fixed homescreen margins
-- Fixed crash bug with signing applications
-
-## Known Issues
-- Android cannot install swift apps :(
-- Random rick rolls
