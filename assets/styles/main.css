@@ -2,8 +2,9 @@
 
 /* === Globe === */
 
-html {
+body {
     font-family: Rubik;
+    background-color: #444755;
 }
 
 * {
@@ -76,6 +77,7 @@ section {
     padding-left: 10vw;
     padding-right: 10vw;
     overflow-x: hidden;
+    background-color: white;
 }
 
 .jumbo-text h1 {
