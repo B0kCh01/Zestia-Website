@@ -18,37 +18,41 @@
 </head>
 
 <body id="top">
-    <nav>
-        <a href="/"><img src="../assets/images/logo-z.png"></a>
-        <div class="links">
-            <a href="/">Home</a>
-            <a href="/#download">Download</a>
-            <a href="/#guide">Guide</a>
-        </div>
-    </nav>
-    <section id="history">
-        <split class="inv">
-            <div data-aos="fade-up" class="one">
-                <releases-all></releases-all>
+    <div class=".wrapper">
+        <nav>
+            <div class="links">
+                <a href="/"><img src="../assets/images/logo-z.png"></a>
             </div>
-            <div data-aos="fade-up" class="two jumbo-text">
-                <h1>History</h1>
-                <subtitle>Older versions of Zestia are listed here.</subtitle>
-                <div class="block">
-                    <a class="btn" href="/#download">Lastest</a>
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/#download">Download</a>
+                <a href="/#guide">Guide</a>
+            </div>
+        </nav>
+        <section id="history">
+            <split class="inv">
+                <div data-aos="fade-up" class="one">
+                    <releases-all></releases-all>
                 </div>
+                <div data-aos="fade-left" class="two jumbo-text">
+                    <h1 data-aos="fade-up">History</h1>
+                    <div data-aos="fade-up" data-aos-duration=1200 class="subtitle">Older versions of Zestia are listed here.</div>
+                    <div data-aos="fade-up" data-aos-duration=1400 class="block">
+                        <a class="btn" href="/#download">Lastest</a>
+                    </div>
+                </div>
+            </split>
+        </section>
+        <div class="footer">
+            <div class="credits">
+                <a href="https://twitter.com/cynostial"><i class="fab fa-2x fa-twitter"></i></a>
+                <a href="https://twitter.com/b0kch01"><i class="fas fa-2x fa-file-code"></i></a>
             </div>
-        </split>
-    </section>
-    <footer>
-        <credits>
-            <a href="https://twitter.com/cynostial"><i class="fab fa-2x fa-twitter"></i></a>
-            <a href="https://twitter.com/b0kch01"><i class="fas fa-2x fa-file-code"></i></a>
-        </credits>
-        <copyright>
-            © Copyright 2016 - 2020 LMDinteractive, Intervice Software USA - All Rights Reserved
-        </copyright>
-    </footer>
+            <div class="copyright">
+                © Copyright 2016 - 2020 LMDinteractive, Intervice Software USA - All Rights Reserved
+            </div>
+        </div>
+    </div>
     <script>
         AOS.init({
             duration: 1000,

@@ -18,72 +18,75 @@
 </head>
 
 <body id="top">
-    <nav>
-        <a href="/"><img src="assets/images/logo-z.png"></a>
-        <div class="links">
-            <a href="#top">Home</a>
-            <a href="#download">Download</a>
-            <a href="#guide">Guide</a>
+    <div class="wrapper">
+        <nav>
+            <div data-aos="zoom-out" class="links">
+                <a href="/"><img src="../assets/images/logo-z.png"></a>
+            </div>
+            <div data-aos="zoom-out" class="links">
+                <a href="#top">Home</a>
+                <a href="#download">Download</a>
+                <a href="#guide">Guide</a>
+            </div>
+        </nav>
+        <section id="home">
+            <split>
+                <div class="one jumbo-text">
+                    <h1 data-aos="fade-up">Zestia</h1>
+                    <div class="subtitle" data-aos="fade-up" data-aos-duration=1200>The most reliable iOS Application installer, for everybody.</div>
+                    <div data-aos="fade-up" data-aos-duration=1400 class="block">
+                        <a class="btn" href="#download">Get Beta</a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="two img">
+                    <img src="assets/images/mockup.PNG">
+                </div>
+            </split>
+        </section>
+
+        <section id="download">
+            <split class="inv">
+                <div data-aos="fade-up" class="one">
+                    <releases></releases>
+                </div>
+                <div class="two jumbo-text">
+                    <h1 data-aos="fade-up">Download</h1>
+                    <div data-aos="fade-up" data-aos-duration=1200 class="subtitle">Download official Zestia app here:</div>
+                    <div data-aos="fade-up" data-aos-duration=1400 class="block">
+                        <a class="btn" href="#download">Download</a>
+                        <a class="btn alt" href="releases">Older</a>
+                    </div>
+                </div>
+            </split>
+        </section>
+
+        <section id="guide">
+            <split>
+                <div class="one jumbo-text">
+                    <h1 data-aos="fade-up">Guide</h1>
+                    <div data-aos="fade-up" data-aos-duration="1200" class="subtitle">How to use this app? Simple:</div>
+                </div>
+                <div data-aos="fade-up" class="two img">
+                    <img src="assets/images/mockup.PNG">
+                </div>
+            </split>
+        </section>
+        <div class="footer">
+            <div class="credits">
+                <a data-aos="zoom-out" href="https://twitter.com/cynostial"><i class="fab fa-2x fa-twitter"></i></a>
+                <a data-aos="zoom-out" href="https://twitter.com/b0kch01"><i class="fas fa-2x fa-file-code"></i></a>
+            </div>
+            <div data-aos="fade-up" class="copyright">
+                © Copyright 2016 - 2020 LMDinteractive, Intervice Software USA - All Rights Reserved
+            </div>
         </div>
-    </nav>
-    <section id="home">
-        <split>
-            <div data-aos="zoom-in-right" class="one jumbo-text">
-                <h1>Zestia</h1>
-                <subtitle>The most reliable iOS Application installer, for everybody.</subtitle>
-                <div class="block">
-                    <a class="btn" href="#download">Get Beta</a>
-                </div>
-            </div>
-            <div data-aos="zoom-in-left" class="two img">
-                <img src="assets/images/mockup.PNG">
-            </div>
-        </split>
-    </section>
-
-    <section id="download">
-        <split class="inv">
-            <div data-aos="zoom-out-up" class="one">
-                <releases></releases>
-            </div>
-            <div data-aos="zoom-out-up" class="two jumbo-text">
-                <h1>Download</h1>
-                <subtitle>Download official Zestia ipa here:</subtitle>
-                <div class="block">
-                    <a class="btn" href="#download">Download</a>
-                    <a class="btn alt" href="releases">Older</a>
-                </div>
-            </div>
-        </split>
-    </section>
-
-    <section id="guide">
-        <split>
-            <div data-aos="fade-right" class="one jumbo-text">
-                <h1>Guide</h1>
-                <subtitle>How to use this app? Simple:</subtitle>
-            </div>
-            <div data-aos="fade-left" class="two img">
-                <img src="assets/images/mockup.PNG">
-            </div>
-        </split>
-    </section>
-    <footer>
-        <credits>
-            <a href="https://twitter.com/cynostial"><i class="fab fa-2x fa-twitter"></i></a>
-            <a href="https://twitter.com/b0kch01"><i class="fas fa-2x fa-file-code"></i></a>
-        </credits>
-        <copyright>
-            © Copyright 2016 - 2020 LMDinteractive, Intervice Software USA - All Rights Reserved
-        </copyright>
-    </footer>
+    </div>
     <script>
         AOS.init({
             duration: 1000,
-            delay: 250,
             easing: "easeInOutQuint ",
-            anchorPlacement: "top-bottom ",
-            once: true
+            anchorPlacement: "top-bottom",
+            offset: 1
         });
     </script>
 </body>
