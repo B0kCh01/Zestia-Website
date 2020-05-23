@@ -12,7 +12,7 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click((function(t) {
     }
 }));
 $(window).scroll(function() {
-    if ($(window).scrollTop() === 0) {
+    if ($(window).scrollTop() <= 0) {
         $("nav").attr("style", "")
     } else {
         $("nav").attr("style", "height: 40px")
